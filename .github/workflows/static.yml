@@ -37,7 +37,7 @@ jobs:
           node-version: 26.13.0
 
       - name: Install Retype
-        run: npm install --global retypeapp@4.6.0
+        run: npm install --global retypeapp@4.7.0-preview
 
       - name: Build documentation
         run: retype build --verbose
