@@ -25,11 +25,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1
         with:
-          node-version: 26.13.0
+          node-version-file: .node-version
           package-manager-cache: false
 
-      - name: Install Retype
-        run: npm install --global retypeapp@4.7.0-preview
+      - name: Install stable Retype
+        run: npm install --global retypeapp@4.6.0
 
       - name: Build documentation
         run: retype build --verbose
