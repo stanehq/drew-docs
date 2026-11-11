@@ -12,7 +12,7 @@ Configure Drew's protection modules: anti-nuke, anti-raid, punishments, threshol
 By default, members with **Manage Server**. Server admins can change this in Server Settings, Integrations.
 !!!
 
-- Every subcommand except `config` requires an active SUDO session. Run `/sudo enter` first.
+- Every subcommand except `config` and `servershow` requires an active SUDO session. Run `/sudo enter` first.
 - Features that take effect today: `nuke` (anti-nuke) and `raid` (anti-raid). `links` and `invites` are stored for an upcoming module and have no effect yet.
 - Punishments and limits that take effect today: `nuke`, `raid`, `channel_delete`, `channel_create`, `role_delete`, `role_create` and `join_rate`. Other values are accepted and stored for upcoming modules.
 
@@ -93,3 +93,13 @@ Presets turn anti-nuke and anti-raid on (or off with `unprotected`) and set the 
 | Option | Type | Required | Description |
 |---|---|---|---|
 | `tier` | Text | Yes | Preset tier to apply. Values: `basic`, `guarded`, `fortress`, `unprotected`. |
+
+## /opsec servershow
+
+Show or hide this server in the carousel on drewbot.xyz.
+
+`off` hides this server from the carousel on drewbot.xyz, `on` shows it again. Servers are shown by default. Doesn't need SUDO.
+
+| Option | Type | Required | Description |
+|---|---|---|---|
+| `state` | Text | Yes | on shows the server, off hides it. Values: `on`, `off`. |
