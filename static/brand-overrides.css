@@ -1,0 +1,69 @@
+/* Drew brand overrides for Retype's generated UI. */
+:root,
+html:not(.dark) {
+  --base-color: #1f9d64;
+  --primary: #1f9d64;
+  --base-link: #178352;
+  --base-link-hover: #0f5c39;
+  --nav-item-border-active: #1f9d64;
+  --nav-item-text-active: #146c45;
+  --nav-item-text-active-hover: #0f5c39;
+  --base-item-bg-active: rgba(31,157,100,.10);
+  --base-item-text-active: #146c45;
+  --toc-border-active: #1f9d64;
+  --toc-text-active: #178352;
+  --selection-bg: rgba(31,157,100,.22);
+  --search-highlight-bg: rgba(31,157,100,.18);
+  --callout-info: #1f9d64;
+  --callout-primary: #1f9d64;
+  --callout-tip: #1f9d64;
+}
+html.dark {
+  --base-color: #41cf8b;
+  --primary: #41cf8b;
+  --base-bg: #050807;
+  --base-text: #b9c6c0;
+  --base-text-strong: #ecf3ef;
+  --base-text-muted: #7f8e87;
+  --base-border: rgba(255,255,255,.08);
+  --base-border-strong: rgba(255,255,255,.14);
+  --base-border-hover: rgba(65,207,139,.45);
+  --base-link: #7ee8b5;
+  --base-link-hover: #41cf8b;
+  --base-item-text-active: #7ee8b5;
+  --base-item-bg-active: rgba(65,207,139,.10);
+  --nav-bg: #050807;
+  --nav-item-text-active: #7ee8b5;
+  --nav-item-bg-active: rgba(65,207,139,.10);
+  --nav-item-border-active: #41cf8b;
+  --toc-text-active: #7ee8b5;
+  --toc-border-active: #41cf8b;
+  --selection-bg: rgba(65,207,139,.28);
+  --search-highlight-bg: rgba(65,207,139,.2);
+  --callout-info: #7ee8b5;
+  --callout-primary: #41cf8b;
+  --callout-tip: #41cf8b;
+}
+a[aria-current="page"],
+a[aria-current="page"]:hover,
+.nav-item.active,
+.nav-item.active:hover {
+  border-color: #1f9d64 !important;
+  border-inline-end-color: #1f9d64 !important;
+  color: #146c45 !important;
+}
+html.dark a[aria-current="page"],
+html.dark a[aria-current="page"]:hover,
+html.dark .nav-item.active,
+html.dark .nav-item.active:hover {
+  border-color: #41cf8b !important;
+  border-inline-end-color: #41cf8b !important;
+  color: #7ee8b5 !important;
+}
+:focus-visible {
+  outline: 2px solid #1f9d64 !important;
+  outline-offset: 2px;
+}
+html.dark :focus-visible {
+  outline-color: #41cf8b !important;
+}
