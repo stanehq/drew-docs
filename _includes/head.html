@@ -1,4 +1,4 @@
-<!-- Drew brand: dark by default (matches drewbot.xyz), Geist type, softer surfaces. -->
+<!-- Drew brand: dark by default (matches drewbot.xyz), Inter type, square corners. -->
 <script>
   try {
     if (!localStorage.getItem("retype_scheme")) {
@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#050807" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   html:not(.dark) {
     --base-color: #1f9d64;
@@ -41,7 +41,7 @@
     --base-item-text-active: #7ee8b5;
     --base-item-bg-hover: rgba(255,255,255,0.04);
     --base-item-bg-active: rgba(65,207,139,0.10);
-    --header-bg: rgba(5,8,7,0.8);
+    --header-bg: #050807;
     --header-border: rgba(255,255,255,0.08);
     --header-text: #b9c6c0;
     --header-text-hover: #ecf3ef;
@@ -58,6 +58,15 @@
     --footer-text: #7f8e87;
     --footer-link: #b9c6c0;
     --footer-link-hover: #41cf8b;
+    --selection-bg: rgba(65,207,139,0.35);
+    --search-highlight-bg: rgba(65,207,139,0.25);
+    --search-modal-bg: #0a0f0d;
+    --search-results-bg: #0a0f0d;
+    --search-modal-border: rgba(255,255,255,0.08);
+    --search-result-hover: rgba(65,207,139,0.10);
+    --search-backdrop: rgba(5,8,7,0.8);
+    --badge-base-hover: #7ee8b5;
+    --card-border: rgba(255,255,255,0.08);
     --branding-label-text: #03110a;
     --branding-label-border: #41cf8b;
     --branding-label-bg: #41cf8b;
@@ -71,13 +80,17 @@
     --toc-border-active: #41cf8b;
     --toc-label-text-hover: #7ee8b5;
   }
-  body, .font-sans { font-family: "Geist", ui-sans-serif, system-ui, sans-serif; }
-  code, kbd, pre, samp, .font-mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, monospace; }
-  h1, h2, h3 { letter-spacing: -0.02em; }
+  body, .font-sans { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
+  code, kbd, pre, samp, .font-mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace; }
+  h1, h2, h3 { font-family: "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.02em; }
   h1 { letter-spacing: -0.035em; }
   ::selection { background: rgba(65, 207, 139, 0.35); }
-  html.dark #retype-header { backdrop-filter: blur(12px); }
-  html.dark #retype-main pre,
-  html.dark #retype-main .codeblock-wrapper { border-radius: 0.9rem; }
-  html.dark #retype-main table { border-radius: 0.75rem; overflow: hidden; }
+  /* Square corners everywhere, like drewbot.xyz. */
+  *, *::before, *::after { border-radius: 0 !important; }
+  #retype-back-to-top {
+    background: #0a0f0d !important;
+    border-color: rgba(65, 207, 139, 0.45) !important;
+  }
+  #retype-back-to-top:hover { background: rgba(65, 207, 139, 0.12) !important; border-color: #41cf8b !important; }
+  #retype-back-to-top svg { color: #41cf8b !important; fill: #41cf8b !important; }
 </style>
