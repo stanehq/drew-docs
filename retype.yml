@@ -7,7 +7,7 @@ start:
   pro: false
 
 meta:
-  title: " | Drew Bot Docs"
+  title: " - Drew Docs"
   description: "Documentation for Drew, the Discord security bot: anti-nuke, anti-raid, verification, logging and a configuration API built for AI agents."
 
 branding:
