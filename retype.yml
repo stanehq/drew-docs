@@ -13,8 +13,8 @@ meta:
 branding:
   title: "Drew"
   label: "Docs"
-  logo: static/logo.svg
-  logoDark: static/logo.svg
+  logo: static/stane-drew-lockup.svg
+  logoDark: static/stane-drew-lockup.svg
   favicon: static/favicon.ico
   colors:
     label:
