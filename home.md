@@ -13,7 +13,7 @@ For a production deployment, follow the documentation in order. Start with the r
 
 ## Recommended Reading Order
 
-1. [Requirements](getting_started/requirements.md)
+1. [Introduction](getting_started/introduction.md)
 2. [Installation](getting_started/installation.md)
 3. [Permissions](getting_started/permissions.md)
 4. [Pricing](getting_started/pricing.md)

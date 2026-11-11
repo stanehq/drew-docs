@@ -1,0 +1,83 @@
+<!-- Drew brand: dark by default (matches drewbot.xyz), Geist type, softer surfaces. -->
+<script>
+  try {
+    if (!localStorage.getItem("retype_scheme")) {
+      document.documentElement.classList.remove("light");
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+</script>
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png" />
+<meta name="theme-color" content="#050807" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html:not(.dark) {
+    --base-color: #1f9d64;
+    --primary: #1f9d64;
+    --base-link: #178352;
+    --base-link-hover: #0f5c39;
+    --branding-label-text: #ffffff;
+    --branding-label-border: #1f9d64;
+    --branding-label-bg: #1f9d64;
+    --body-link: #178352;
+    --toc-text-active: #178352;
+    --toc-border-active: #1f9d64;
+  }
+  html.dark {
+    --base-color: #41cf8b;
+    --primary: #41cf8b;
+    --base-bg: #050807;
+    --base-text: #b9c6c0;
+    --base-text-strong: #ecf3ef;
+    --base-text-muted: #7f8e87;
+    --base-border: rgba(255,255,255,0.08);
+    --base-border-strong: rgba(255,255,255,0.14);
+    --base-border-hover: rgba(65,207,139,0.35);
+    --base-link: #7ee8b5;
+    --base-link-hover: #41cf8b;
+    --base-item-text: #b9c6c0;
+    --base-item-text-active: #7ee8b5;
+    --base-item-bg-hover: rgba(255,255,255,0.04);
+    --base-item-bg-active: rgba(65,207,139,0.10);
+    --header-bg: rgba(5,8,7,0.8);
+    --header-border: rgba(255,255,255,0.08);
+    --header-text: #b9c6c0;
+    --header-text-hover: #ecf3ef;
+    --nav-bg: #050807;
+    --nav-item-text: #b9c6c0;
+    --nav-item-text-hover: #ecf3ef;
+    --nav-item-text-active: #7ee8b5;
+    --nav-item-bg-hover: rgba(255,255,255,0.04);
+    --nav-item-bg-active: rgba(65,207,139,0.10);
+    --sidebar-left-bg: #050807;
+    --sidebar-left-border: rgba(255,255,255,0.06);
+    --sidebar-right-bg: #050807;
+    --sidebar-right-border: rgba(255,255,255,0.06);
+    --footer-text: #7f8e87;
+    --footer-link: #b9c6c0;
+    --footer-link-hover: #41cf8b;
+    --branding-label-text: #03110a;
+    --branding-label-border: #41cf8b;
+    --branding-label-bg: #41cf8b;
+    --body-link: #7ee8b5;
+    --body-link-decoration-color: rgba(65,207,139,0.4);
+    --body-link-decoration-color-hover: #41cf8b;
+    --toc-heading: #7f8e87;
+    --toc-text: #b9c6c0;
+    --toc-text-hover: #ecf3ef;
+    --toc-text-active: #7ee8b5;
+    --toc-border-active: #41cf8b;
+    --toc-label-text-hover: #7ee8b5;
+  }
+  body, .font-sans { font-family: "Geist", ui-sans-serif, system-ui, sans-serif; }
+  code, kbd, pre, samp, .font-mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, monospace; }
+  h1, h2, h3 { letter-spacing: -0.02em; }
+  h1 { letter-spacing: -0.035em; }
+  ::selection { background: rgba(65, 207, 139, 0.35); }
+  html.dark #retype-header { backdrop-filter: blur(12px); }
+  html.dark #retype-main pre,
+  html.dark #retype-main .codeblock-wrapper { border-radius: 0.9rem; }
+  html.dark #retype-main table { border-radius: 0.75rem; overflow: hidden; }
+</style>

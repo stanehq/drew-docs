@@ -7,32 +7,46 @@ start:
   pro: false
 
 meta:
-  title: " - Drew Docs"
-  description: "Meet Drew, the Discord security bot built by Stane. Automod, anti-raid, anti-nuke, verification, and detailed logs in one clean dashboard."
+  title: " | Drew Bot Docs"
+  description: "Documentation for Drew, the Discord security bot: anti-nuke, anti-raid, verification, logging and a configuration API built for AI agents."
 
 branding:
   title: "Drew"
-  label: "v1.0.0"
+  label: "Docs"
+  logo: static/logo.svg
+  logoDark: static/logo.svg
   favicon: static/favicon.ico
+  colors:
+    label:
+      text: "#03110a"
+      background: "#41cf8b"
 
 links:
   - text: Website
     link: https://drewbot.xyz
-    icon: link
+    icon: globe
 
-  - text: Premium
-    link: https://drewbot.xyz/premium.html
-    icon: ruby
+  - text: Status
+    link: https://drewbot.xyz/status
+    icon: pulse
+
+  - text: Metrics
+    link: https://drewbot.xyz/metrics
+    icon: graph
+
+  - text: Dashboard
+    link: https://drewbot.xyz/dashboard
+    icon: gear
 
   - text: Support
-    link: https://discord.gg/stane
+    link: https://discord.gg/5e2jm7QDSS
     icon: comment-discussion
 
 footer:
-  copyright: "© Copyright 2025 Drew. All rights reserved."
+  copyright: "© {{ year }} Drew. All rights reserved."
   links:
     - text: Privacy Policy
-      link: https://drewbot.xyz/privacy
+      link: https://drewbot.xyz/privacy/
 
     - text: Terms of Service
-      link: https://drewbot.xyz/tos
+      link: https://drewbot.xyz/tos/

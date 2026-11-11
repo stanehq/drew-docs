@@ -47,4 +47,4 @@ If Drew is not responding or a command behaves unexpectedly, first verify:
 - The relevant module has been configured.
 - The command is being executed in a supported context.
 
-For a complete diagnostic workflow, see [Troubleshooting](../setup_guide/troubleshooting.md).
+For a complete diagnostic workflow, see [Troubleshooting](../guides/troubleshooting.md).
