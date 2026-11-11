@@ -1,4 +1,4 @@
-<!-- Drew brand: dark by default (matches drewbot.xyz), Unbounded and Albert Sans type, square corners. -->
+<!-- Drew brand: keep Retype navigation, focus, and callouts on-brand in both color schemes. -->
 <script>
   try {
     if (!localStorage.getItem("retype_scheme")) {
@@ -12,110 +12,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Unbounded:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="/static/brand-overrides.css" rel="stylesheet" />
 <style>
-  html:not(.dark) {
-    --base-color: #1f9d64;
-    --primary: #1f9d64;
-    --base-link: #178352;
-    --base-link-hover: #0f5c39;
-    --branding-label-text: #ffffff;
-    --branding-label-border: #1f9d64;
-    --branding-label-bg: #1f9d64;
-    --body-link: #178352;
-    --toc-text-active: #178352;
-    --toc-border-active: #1f9d64;
-    --nav-item-bg-active: rgba(31,157,100,0.10);
-    --nav-item-bg-active-hover: rgba(31,157,100,0.14);
-    --nav-item-border-active: #1f9d64;
-    --nav-item-text-active: #146c45;
-    --nav-item-text-active-hover: #0f5c39;
-    --base-item-bg-active: rgba(31,157,100,0.10);
-    --base-item-text-active: #146c45;
-    --base-border-hover: rgba(31,157,100,0.45);
-    --callout-info: #1f9d64;
-    --callout-primary: #1f9d64;
-    --callout-tip: #1f9d64;
-    --selection-bg: rgba(31,157,100,0.25);
-    --search-highlight-bg: rgba(31,157,100,0.18);
-    --search-result-hover: rgba(31,157,100,0.08);
-    --body-link-decoration-color: rgba(31,157,100,0.4);
-    --body-link-decoration-color-hover: #1f9d64;
-    --toc-text-hover: #0f5c39;
-    --badge-base-hover: #1f9d64;
-  }
-  html.dark {
-    --base-color: #41cf8b;
-    --primary: #41cf8b;
-    --base-bg: #050807;
-    --base-text: #b9c6c0;
-    --base-text-strong: #ecf3ef;
-    --base-text-muted: #7f8e87;
-    --base-border: rgba(255,255,255,0.08);
-    --base-border-strong: rgba(255,255,255,0.14);
-    --base-border-hover: rgba(65,207,139,0.35);
-    --base-link: #7ee8b5;
-    --base-link-hover: #41cf8b;
-    --base-item-text: #b9c6c0;
-    --base-item-text-active: #7ee8b5;
-    --base-item-bg-hover: rgba(255,255,255,0.04);
-    --base-item-bg-active: rgba(65,207,139,0.10);
-    --header-bg: #050807;
-    --header-border: rgba(255,255,255,0.08);
-    --header-text: #b9c6c0;
-    --header-text-hover: #ecf3ef;
-    --nav-bg: #050807;
-    --nav-item-text: #b9c6c0;
-    --nav-item-text-hover: #ecf3ef;
-    --nav-item-text-active: #7ee8b5;
-    --nav-item-bg-hover: rgba(255,255,255,0.04);
-    --nav-item-bg-active: rgba(65,207,139,0.10);
-    --sidebar-left-bg: #050807;
-    --sidebar-left-border: rgba(255,255,255,0.06);
-    --sidebar-right-bg: #050807;
-    --sidebar-right-border: rgba(255,255,255,0.06);
-    --footer-text: #7f8e87;
-    --footer-link: #b9c6c0;
-    --footer-link-hover: #41cf8b;
-    --selection-bg: rgba(65,207,139,0.35);
-    --search-highlight-bg: rgba(65,207,139,0.25);
-    --search-modal-bg: #0a0f0d;
-    --search-results-bg: #0a0f0d;
-    --search-modal-border: rgba(255,255,255,0.08);
-    --search-result-hover: rgba(65,207,139,0.10);
-    --search-backdrop: rgba(5,8,7,0.8);
-    --badge-base-hover: #7ee8b5;
-    --card-border: rgba(255,255,255,0.08);
-    --callout-info: #7ee8b5;
-    --callout-primary: #41cf8b;
-    --callout-tip: #41cf8b;
-    --callout-base-bg: #0a0f0d;
-    --branding-label-text: #03110a;
-    --branding-label-border: #41cf8b;
-    --branding-label-bg: #41cf8b;
-    --body-link: #7ee8b5;
-    --body-link-decoration-color: rgba(65,207,139,0.4);
-    --body-link-decoration-color-hover: #41cf8b;
-    --toc-heading: #7f8e87;
-    --toc-text: #b9c6c0;
-    --toc-text-hover: #ecf3ef;
-    --toc-text-active: #7ee8b5;
-    --toc-border-active: #41cf8b;
-    --toc-label-text-hover: #7ee8b5;
-  }
   body, .font-sans { font-family: "Albert Sans", ui-sans-serif, system-ui, sans-serif; }
   code, kbd, pre, samp, .font-mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace; }
   h1, h2, h3 { font-family: "Unbounded", "Albert Sans", ui-sans-serif, system-ui, sans-serif; letter-spacing: -0.01em; }
   h1 { letter-spacing: -0.02em; }
-  ::selection { background: rgba(65, 207, 139, 0.35); }
-  /* Square corners everywhere, like drewbot.xyz. */
   *, *::before, *::after { border-radius: 0 !important; }
-  #retype-back-to-top {
-    background: #0a0f0d !important;
-    border-color: rgba(65, 207, 139, 0.45) !important;
-  }
-  #retype-back-to-top:hover { background: rgba(65, 207, 139, 0.12) !important; border-color: #41cf8b !important; }
+  #retype-back-to-top { background: #0a0f0d !important; border-color: rgba(65,207,139,.45) !important; }
+  #retype-back-to-top:hover { background: rgba(65,207,139,.12) !important; border-color: #41cf8b !important; }
   #retype-back-to-top svg { color: #41cf8b !important; fill: #41cf8b !important; }
-  /* Changelog author avatar: black on light, inverted to white on dark. */
   img[src$="neevets.png"] { background: transparent !important; }
   html.dark img[src$="neevets.png"] { filter: invert(1); }
 </style>
