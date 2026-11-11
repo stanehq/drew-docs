@@ -1,5 +1,6 @@
 ---
 label: Home
+title: Drew Docs
 icon: home
 order: 10000
 ---
