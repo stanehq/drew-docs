@@ -1,66 +1,51 @@
 ---
 label: Setup
 icon: gear
+order: 80
 ---
 
 # Setup
 
-Drew's setup process configures the permissions, security modules, protection policies, and server resources required for reliable operation.
+This takes about two minutes. Run the commands in a private staff channel.
 
-:::info
-Complete the initial setup before enabling Drew's security features in a production environment.
-:::
+## 1. Set the SUDO password (owner)
 
-## Before You Start
+```
+/sudo setup password:<a strong password>
+```
 
-Ensure that:
+Sensitive commands now need `/sudo enter` first. See [SUDO mode](../features/sudo.md).
 
-- Drew is installed and has the required permissions.
-- Drew's role is positioned correctly in the server hierarchy.
-- A private channel is available for configuration and testing.
-- You have `Administrator` permission in the server.
-- Any existing security or moderation integrations that interact with Drew have been identified.
+## 2. Turn on protection
 
-## Initialize Drew
+```
+/sudo enter password:<your password>
+/opsec setup tier:guarded
+/opsec punishment action:nuke type:ban
+/opsec punishment action:raid type:kick
+```
 
-Start the setup process using Drew's setup command.
+`guarded` turns on anti-nuke and anti-raid with balanced limits. The punishments matter: the default is `none`, which only detects. See [Anti-nuke](../features/antinuke.md) and [Anti-raid](../features/antiraid.md).
 
-The setup process validates Drew's environment and configures the resources required by its security systems.
+## 3. Trust your other bots
 
-If Drew reports missing permissions, resolve the reported Discord permission or role hierarchy issue before continuing.
+Other bots that create or delete channels or roles (ticket bots, for example) should be whitelisted so anti-nuke doesn't punish them:
 
-## Validate the Setup
+```
+/opsec whitelist
+```
 
-After setup completes, verify that:
+## 4. Turn on logs
 
-- Drew can access the required channels.
-- Drew can perform the actions required by its enabled modules.
-- Drew's role is above the roles it needs to manage.
-- Security modules are enabled and configured as intended.
-- Trusted users, bots, and integrations have been reviewed.
-- Auto-Rollback is configured where required.
+```
+/log set channel:#logs
+```
 
-:::success
-Do not consider setup complete solely because the setup command succeeds. Validate Drew's effective permissions and security behavior before relying on it in production.
-:::
+## 5. Optional
 
-## Production Readiness
+- Verification: `/verify setup` then `/verify send`. See [Verification](../features/verification.md).
+- Back up the result: `/bkp save`.
 
-Before enabling Drew across a production server, review:
+## Check your setup
 
-- Role hierarchy
-- Effective channel permissions
-- Security module configuration
-- Thresholds
-- Whitelists and exemptions
-- Protected integrations
-- Auto-Rollback configuration
-- Diagnostic and logging configuration
-
-Make configuration changes incrementally and validate the resulting behavior after each change.
-
-## Troubleshooting
-
-If setup fails or Drew reports that it lacks required permissions, see the [Troubleshooting Guide](../guides/troubleshooting.md).
-
-If you have not installed Drew yet, start with [Installation](../getting_started/installation.md).
+`/opsec config category:anti_nuke` shows what is active. You can also review everything on the [dashboard](https://drewbot.xyz/dashboard).

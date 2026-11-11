@@ -1,50 +1,186 @@
 ---
 label: Overview
-icon: wrap
-order: 9
+icon: list-unordered
+order: 2000
 ---
 
-# Overview
+# Commands
 
-Drew provides a command interface for managing security systems, moderation, configuration, diagnostics, and server utilities.
+Every Drew command is a slash command. Type `/` in Discord to see them with autocomplete. This page lists them all. Open a category for options and permissions.
 
-Commands are organized by function so you can quickly locate the system you need.
 
-:::info Command Usage
-Commands may require specific permissions, modules, or configuration before they can be used successfully. If a command does not respond or returns a permission error, check the [Troubleshooting Guide](../guides/troubleshooting.md).
-:::
+## [Security](opsec.md)
 
-## Permissions
+| Command | Description |
+|---|---|
+| `/opsec config` | View current security settings |
+| `/opsec snapshot` | Manage server security snapshots |
+| `/opsec enable` | Enable a protection feature |
+| `/opsec disable` | Disable a protection feature (Requires SUDO) |
+| `/opsec punishment` | Configure punishment for an action |
+| `/opsec limit` | Configure threshold for an action |
+| `/opsec whitelist` | Manage security whitelists |
+| `/opsec setup` | Apply a security preset |
 
-Command access is determined by Drew's permission model and, where applicable, Discord permissions.
+## [SUDO](sudo.md)
 
-Some commands can perform high-impact operations. Treat administrative and security commands as privileged operations and only grant access to trusted staff.
+| Command | Description |
+|---|---|
+| `/sudo enter` | Enter SUDO mode for 15 minutes |
+| `/sudo exit` | Exit SUDO mode immediately |
+| `/sudo status` | Check current SUDO session status |
+| `/sudo setup` | Configure SUDO protection (Owner only) |
 
-:::warning
-Discord `Administrator` permission does not automatically grant unrestricted access to every Drew command. Drew may apply its own authorization rules to sensitive operations.
-:::
+## [Moderation](mod.md)
 
-## Command Behavior
+| Command | Description |
+|---|---|
+| `/mod ban` | Ban a member from the server |
+| `/mod kick` | Kick a member from the server |
+| `/mod timeout` | Timeout a member in minutes |
+| `/mod untimeout` | Remove a timeout from a member |
+| `/mod purge` | Delete a number of messages in the channel |
+| `/mod unban` | Unban a user from the server |
+| `/mod lock` | Lock the current channel |
+| `/mod unlock` | Unlock the current channel |
+| `/mod slowmode` | Set the slowmode for the channel |
+| `/mod warn` | Warn a member |
+| `/mod sanitize` | Clean a member's nickname |
+| `/mod lockall` | Lock all text channels |
+| `/mod unlockall` | Unlock all text channels |
+| `/mod cases` | View or modify moderation cases |
 
-Before executing a command that changes server state, verify:
+## [Logging](log.md)
 
-- You understand what the command will modify.
-- You have the required Drew permissions.
-- Drew has the Discord permissions required for the operation.
-- The affected resources are correctly configured.
-- The command is being executed in the intended server and channel.
+| Command | Description |
+|---|---|
+| `/log set` | Set the audit log channel |
+| `/log toggle` | Enable/disable specific log categories |
+| `/log status` | Show logging status and enabled categories |
+| `/log clear` | Clear the audit log channel |
 
-For security-sensitive operations, prefer controlled testing before applying changes to production resources.
+## [Verification](verify.md)
 
-## Troubleshooting Commands
+| Command | Description |
+|---|---|
+| `/verify setup` | Setup the verification role and channel |
+| `/verify send` | Send the verification panel |
 
-If Drew is not responding or a command behaves unexpectedly, first verify:
+## [Backups](bkp.md)
 
-- Drew is online.
-- The command is enabled and supported.
-- The current channel is accessible to Drew.
-- Required permissions are available.
-- The relevant module has been configured.
-- The command is being executed in a supported context.
+| Command | Description |
+|---|---|
+| `/bkp save` | Save current server configuration |
+| `/bkp list` | List available backups |
+| `/bkp load` | Load a server backup |
+| `/bkp delete` | Delete backups in a category |
 
-For a complete diagnostic workflow, see [Troubleshooting](../guides/troubleshooting.md).
+## [API tokens](api.md)
+
+| Command | Description |
+|---|---|
+| `/api token create` | Create an API token (requires server owner or an active SUDO session) |
+| `/api token list` | List this server's active API tokens |
+| `/api token revoke` | Revoke an API token immediately |
+| `/api docs` | How to configure Drew through the API |
+
+## [Giveaways](giveaway.md)
+
+| Command | Description |
+|---|---|
+| `/giveaway start` | Launch a new giveaway |
+| `/giveaway end` | Force-end an active giveaway |
+| `/giveaway reroll` | Reroll a winner for an ended giveaway |
+| `/giveaway list` | List all active giveaways in this server |
+| `/giveaway pause` | Pause an active giveaway (timer stops) |
+| `/giveaway resume` | Resume a paused giveaway |
+| `/giveaway delete` | Delete a giveaway permanently |
+
+## [Antivirus](av.md)
+
+| Command | Description |
+|---|---|
+| `/av scanfile` | Submit a file to VirusTotal for scanning |
+| `/av scanweb` | Submit a URL to VirusTotal for scanning |
+| `/av lookup` | Lookup a hash, URL, domain, or IP on VirusTotal |
+| `/av history` | Show recent VirusTotal scans |
+| `/av rescan` | Request a file rescan |
+| `/av flags` | Show analysis flags for a VirusTotal analysis ID |
+
+## [General](gen.md)
+
+| Command | Description |
+|---|---|
+| `/gen help` | Show help menu |
+| `/gen about` | Show bot info |
+| `/gen ping` | Show latency |
+| `/gen dashboard` | Manage everything |
+| `/gen invite` | Invite link |
+| `/gen infouser` | Show user info |
+| `/gen infoserver` | Show server info |
+| `/gen feedback` | Send feedback |
+| `/gen report` | Report a user |
+| `/gen snipe` | Snipe latest deleted message |
+| `/gen editsnipe` | Snipe latest edited message |
+| `/gen reactionsnipe` | Snipe latest removed reaction |
+| `/gen clearsnipe` | Clear all snipes (Manage Messages req) |
+| `/gen reactionhistory` | View reaction history for message |
+
+## [Music](music.md)
+
+| Command | Description |
+|---|---|
+| `/music play` | Play high-fidelity music from Spotify/Apple/Deezer |
+| `/music skip` | Skip the current track |
+| `/music stop` | Stop playback and clear queue |
+| `/music queue` | Show current queue |
+| `/music shuffle` | Shuffle the queue |
+| `/music autoplay` | Toggle AutoPlay mode |
+| `/music stay` | Toggle 24/7 mode |
+
+## [VoiceMaster](voicemaster.md)
+
+| Command | Description |
+|---|---|
+| `/setup default` | Create default Join to Create channel |
+| `/setup predefined` | Channels with variable names |
+| `/set channel` | Set Join to Create channel |
+| `/set role` | Set moderator role |
+| `/set bitrate` | Set default bitrate |
+| `/toggle list` | Show all toggles |
+| `/toggle set` | Set a toggle |
+| `/voice lock` | Lock room |
+| `/voice unlock` | Unlock room |
+| `/voice ghost` | Hide room |
+| `/voice unghost` | Unhide room |
+| `/voice claim` | Claim room |
+| `/voice limit` | Set limit |
+| `/voice name` | Rename room |
+| `/voice game` | Rename to activity |
+| `/voice bitrate` | Set bitrate |
+| `/voice permit` | Permit user |
+| `/voice reject` | Reject user |
+| `/voice status` | Set room status |
+| `/voice region` | Set voice region |
+| `/voice transfer` | Transfer ownership |
+| `/voice text` | Toggle private text channel |
+| `/interface` | Control panel |
+
+## [Last.fm](lastfm.md)
+
+| Command | Description |
+|---|---|
+| `/lastfm set` | Set your Last.fm username |
+| `/lastfm np` | Show what you are currently playing |
+| `/lastfm stats` | Show your Last.fm stats |
+| `/lastfm milestone` | How many scrobbles until a milestone |
+| `/lastfm playsalbum` | Check how many plays you have for an album |
+
+## [Crypto](crypto.md)
+
+| Command | Description |
+|---|---|
+| `/crypto` | Check cryptocurrency price |
+| `/gas` | View current gas prices |
+| `/transaction` | Get transaction info (BTC, LTC, ETH) |
+| `/subscribe` | Subscribe to a BTC transaction for one confirmation |

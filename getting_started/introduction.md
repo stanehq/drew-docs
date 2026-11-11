@@ -1,28 +1,21 @@
 ---
 label: Introduction
 icon: light-bulb
-order: 1
+order: 100
 ---
 
 # Introduction
 
-Drew is a security and moderation platform for Discord servers, designed to protect critical server resources, detect potentially destructive activity, and respond according to your configured security policies.
+Drew protects Discord servers from the two attacks that do the most damage: **nukes** (a compromised or rogue account deleting channels and roles) and **raids** (floods of accounts joining at once). On top of that it handles verification, logging and everyday moderation.
 
-Before deploying Drew, review the following prerequisites:
+## Before you start
 
-- You have `Administrator` permission in the target server.
-- You understand that Drew requires elevated permissions to perform security and moderation actions reliably.
-- You have identified whether the server is a production or testing environment.
-- You have a private channel available for initial configuration and validation.
-- Drew's role can be positioned appropriately within the server hierarchy.
-- Any external services required by the features you intend to use are available and correctly configured.
+- You need **Manage Server** to add Drew, and the server owner is needed once to set the SUDO password.
+- Drew asks for **Administrator** so it can act anywhere in the server.
+- Drew's role must sit **above** the roles of anyone it may punish.
 
-:::warning Production Deployment
-Do not deploy security automation to a production server without first validating its permissions, role hierarchy, module configuration, whitelists, and expected enforcement behavior.
+:::warning Test first
+If your server is large or busy, set up Drew in a test server first, or start with conservative limits, and check the log channel before relying on it.
 :::
 
-:::info Recommended Approach
-Start with a controlled configuration, validate Drew's behavior against expected events, and only then expand its protection across the server.
-:::
-
-Once the prerequisites have been verified, continue with [Installation](installation.md).
+Continue with [Installation](installation.md).

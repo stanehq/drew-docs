@@ -1,33 +1,24 @@
 ---
 label: Pricing
 icon: credit-card
+order: 70
 ---
 
 # Pricing
 
-Drew is a premium service with a **5-day free trial** that provides full access to premium features for evaluation.
+Drew is a premium bot with a **5-day free trial**.
 
-## Premium Access
+| Plan | Monthly | Yearly |
+|---|---|---|
+| Standard | $2.83 | $28.30 (2 months free) |
+| Advanced | $6.83 | $68.30 (2 months free) |
 
-Get Drew Premium from the official website:
+[Compare plans on drewbot.xyz](https://drewbot.xyz/pricing)
 
-[Get Drew Premium](https://drewbot.site/premium)
+## Free trial
 
-:::warning Subscription Required After Trial
-The 5-day trial provides temporary access to Drew's premium features. Once the trial expires, an active subscription is required to continue using premium functionality.
-:::
+- New users get 5 days of Premium for free.
+- A payment method is needed to start the trial.
+- Cancel before it ends and you pay nothing.
 
-## Free Trial
-
-The trial is intended for evaluating Drew before committing to a subscription.
-
-During the trial, you can:
-
-- Test Drew's security features.
-- Validate compatibility with your server.
-- Configure and evaluate protection modules.
-- Confirm that Drew meets your operational requirements.
-
-:::info
-No subscription is required during the active trial period.
-:::
+After the trial, an active subscription is needed to keep using Drew. Billing, renewals, cancellations and refunds are covered by the [Purchase Terms](https://drewbot.xyz/purchase-terms).
