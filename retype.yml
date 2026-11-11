@@ -11,10 +11,10 @@ meta:
   description: "Documentation for Drew, the Discord security bot: anti-nuke, anti-raid, verification, logging and a configuration API built for AI agents."
 
 branding:
-  title: "Drew"
-  label: "Docs"
-  logo: static/stane-drew-lockup.svg
-  logoDark: static/stane-drew-lockup.svg
+  title: ""
+  label: ""
+  logo: static/logo.svg
+  logoDark: static/logo.svg
   favicon: static/favicon.ico
   colors:
     label:
