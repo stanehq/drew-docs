@@ -1,6 +1,6 @@
 ---
 label: Purchase Terms
-icon: credit-card
+icon: file-badge
 redirect: https://drewbot.xyz/purchase-terms
 ---
 

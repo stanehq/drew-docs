@@ -69,6 +69,10 @@ Their highest role is at or above Drew's. Move Drew's role higher in **Server Se
 
 See the [Privacy Policy](https://drewbot.xyz/privacy).
 
+### Can I hide my server from drewbot.xyz?
+
+Yes. The home page shows the largest servers using Drew (name, icon and number of people). To hide yours, run `/opsec servershow state:off`, or turn off **Show on drewbot.xyz** on the dashboard. It also works through the API with the `showcase_enabled` setting.
+
 ### Is this bot really Drew?
 
 The official Drew bot is invited from [drewbot.xyz](https://drewbot.xyz) and its application ID is `1441457111409103010`. Drew will never ask for your password, your Discord token or to scan a QR code. If another bot claims to be Drew, remove it and report it to Discord and to our [support server](https://discord.gg/5e2jm7QDSS).

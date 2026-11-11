@@ -1,6 +1,6 @@
 ---
 label: Moderation
-icon: law
+icon: stop
 order: 970
 ---
 

@@ -1,6 +1,6 @@
 ---
 label: Permissions
-icon: checklist
+icon: id-badge
 ---
 
 # Permissions

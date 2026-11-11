@@ -1,6 +1,6 @@
 ---
 label: Crypto
-icon: graph
+icon: pulse
 order: 860
 ---
 

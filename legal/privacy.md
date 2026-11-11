@@ -1,6 +1,6 @@
 ---
 label: Privacy Policy
-icon: law
+icon: eye
 redirect: https://drewbot.xyz/privacy
 ---
 

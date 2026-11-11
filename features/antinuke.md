@@ -1,6 +1,6 @@
 ---
 label: Anti-nuke
-icon: shield-lock
+icon: shield-check
 order: 100
 ---
 

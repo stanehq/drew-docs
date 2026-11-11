@@ -1,6 +1,6 @@
 ---
 label: API tokens
-icon: code
+icon: key-asterisk
 order: 930
 ---
 

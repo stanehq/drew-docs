@@ -21,6 +21,7 @@ Every Drew command is a slash command. Type `/` in Discord to see them with auto
 | `/opsec limit` | Configure threshold for an action |
 | `/opsec whitelist` | Manage security whitelists |
 | `/opsec setup` | Apply a security preset |
+| `/opsec servershow` | Show or hide this server in the carousel on drewbot.xyz |
 
 ## [SUDO](sudo.md)
 

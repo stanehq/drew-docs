@@ -1,6 +1,6 @@
 ---
 label: Verification
-icon: verified
+icon: check-circle
 order: 950
 ---
 
