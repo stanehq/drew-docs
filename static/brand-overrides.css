@@ -67,3 +67,35 @@ html.dark .nav-item.active:hover {
 html.dark :focus-visible {
   outline-color: #41cf8b !important;
 }
+
+/* Keep documentation navigation readable while hovering in both themes. */
+.nav-item,
+.nav-item a,
+#retype-sidebar a,
+#retype-toc a {
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+.nav-item:hover,
+.nav-item a:hover,
+#retype-sidebar a:hover,
+#retype-toc a:hover {
+  color: #146c45 !important;
+  background-color: rgba(31, 157, 100, 0.08);
+}
+html.dark .nav-item:hover,
+html.dark .nav-item a:hover,
+html.dark #retype-sidebar a:hover,
+html.dark #retype-toc a:hover {
+  color: #7ee8b5 !important;
+  background-color: rgba(65, 207, 139, 0.12);
+}
+html:not(.dark) a[aria-current="page"]:hover,
+html:not(.dark) .nav-item.active:hover {
+  color: #0f5c39 !important;
+  background-color: rgba(31, 157, 100, 0.12);
+}
+html.dark a[aria-current="page"]:hover,
+html.dark .nav-item.active:hover {
+  color: #a5f3ce !important;
+  background-color: rgba(65, 207, 139, 0.16);
+}
