@@ -233,5 +233,5 @@ For questions regarding this User Agreement, your Drew account, or dashboard fun
 
 Stane website: [https://stanelabs.com](https://stanelabs.com)
 Drew website: [https://drewbot.xyz](https://drewbot.xyz)
-Legal: [legal@drewbot.xyz](legal@drewbot.xyz)
+Legal: [legal@drewbot.xyz](mailto:legal@drewbot.xyz)
 Privacy: [privacy@drewbot.xyz](mailto:privacy@drewbot.xyz)  
