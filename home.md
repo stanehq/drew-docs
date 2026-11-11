@@ -1,48 +1,36 @@
 ---
 label: Home
 icon: home
+order: 10000
 ---
 
 # Drew Documentation
 
-Welcome to the official documentation for **Drew**, an advanced Discord security and moderation platform designed to protect servers against raids, abuse, destructive activity, and malicious automation.
+**Drew** is a Discord security bot. It stops nukes and raids, verifies new members, logs everything that happens in your server and keeps a full audit trail of its own configuration.
 
-:::primary Quick Start
-For a production deployment, follow the documentation in order. Start with the requirements, install Drew, configure its security systems, and validate the deployment before relying on it for active protection.
+:::primary Quick start
+1. [Add Drew to your server](getting_started/installation.md).
+2. Set a SUDO password with `/sudo setup`.
+3. Follow [Setup](getting_started/setup.md) to turn on anti-nuke, anti-raid and logging in about two minutes.
 :::
 
-## Recommended Reading Order
+## What Drew does today
 
-1. [Introduction](getting_started/introduction.md)
-2. [Installation](getting_started/installation.md)
-3. [Permissions](getting_started/permissions.md)
-4. [Pricing](getting_started/pricing.md)
-5. [Setup](commands/sec/init.md)
-6. [Troubleshooting](guides/troubleshooting.md)
+- **[Anti-nuke](features/antinuke.md)**: punishes anyone mass-creating or mass-deleting channels and roles.
+- **[Anti-raid](features/antiraid.md)**: detects join floods and punishes raiders.
+- **[Verification](features/verification.md)**: a one-click panel that gives members a role.
+- **[Logging](features/logging.md)**: messages, members, moderation, channels, roles, voice, invites and server changes.
+- **[SUDO mode](features/sudo.md)**: a password protects sensitive changes from compromised admins.
+- **[Backups](features/backups.md)**: save and restore your configuration.
+- **[Moderation](commands/mod.md)**: bans, kicks, timeouts, warnings, purges, locks and cases.
+- **Extras**: [giveaways](commands/giveaway.md), [music](commands/music.md), [VoiceMaster](commands/voicemaster.md), [Last.fm](commands/lastfm.md), [antivirus](commands/av.md) and [crypto](commands/crypto.md).
 
-## What Drew Does
+Configure everything with slash commands, the [dashboard](https://drewbot.xyz/dashboard) or the [Configuration API](developers/api/intro.md). All three use the same rules and every change is logged.
 
-Drew provides security and moderation systems designed to:
+Planned modules are listed on the [Roadmap](features/roadmap.md).
 
-- Detect and mitigate raids, spam, and malicious automation.
-- Protect critical server resources against destructive activity.
-- Automatically roll back supported destructive changes.
-- Support day-to-day moderation workflows for server staff.
-- Provide audit visibility through security and moderation logs.
-- Handle member verification through configurable verification systems.
-- Provide AV utilities for analyzing suspicious files, links, and artifacts.
+## Need help?
 
-## Security Model
-
-Drew operates across multiple layers of server security, including:
-
-- Member and account risk evaluation.
-- Anti-raid and anti-abuse protections.
-- Anti-nuke enforcement.
-- Permission and role monitoring.
-- Resource protection.
-- Auto-Rollback.
-- Moderation and quarantine systems.
-- Security event logging.
-
-The effectiveness of these systems depends on Drew's permissions, role hierarchy, module configuration, and the server's existing integrations.
+- [FAQ](guides/faq.md) and [Troubleshooting](guides/troubleshooting.md)
+- [Live status](https://drewbot.xyz/status)
+- [Support server](https://discord.gg/5e2jm7QDSS)

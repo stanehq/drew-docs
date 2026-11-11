@@ -5,7 +5,7 @@ icon: checklist
 
 # Permissions
 
-Drew requires elevated Discord permissions to reliably perform security, moderation, and Auto-Rollback actions.
+Drew requires elevated Discord permissions to reliably perform security and moderation actions.
 
 Discord permissions are evaluated together with channel overrides and role hierarchy. Granting a permission on Drew's role does not necessarily mean that Drew can use it in every channel or against every target.
 
@@ -33,7 +33,6 @@ The hierarchy affects operations such as:
 
 - Managing roles
 - Moderating members
-- Applying quarantine roles
 - Performing enforcement actions
 - Managing resources protected by Drew
 
@@ -41,9 +40,7 @@ Place Drew's role above the roles and members it needs to manage.
 
 ## Channel Permissions
 
-Even with `Administrator`, channel-specific configuration can affect Drew's ability to operate in restricted contexts.
-
-For command and message-based functionality, verify:
+`Administrator` bypasses channel overrides. If you removed `Administrator` from Drew, check that it has these permissions in every channel where it must work:
 
 - `View Channel`
 - `Send Messages`

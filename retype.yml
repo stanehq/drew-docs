@@ -45,8 +45,11 @@ links:
 footer:
   copyright: "© {{ year }} Drew. All rights reserved."
   links:
-    - text: Privacy Policy
-      link: https://drewbot.xyz/privacy/
-
     - text: Terms of Service
-      link: https://drewbot.xyz/tos/
+      link: https://drewbot.xyz/terms
+
+    - text: Privacy Policy
+      link: https://drewbot.xyz/privacy
+
+    - text: Purchase Terms
+      link: https://drewbot.xyz/purchase-terms
