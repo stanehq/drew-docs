@@ -1,6 +1,6 @@
 ---
 label: Logging
-icon: log
+icon: note
 order: 960
 ---
 

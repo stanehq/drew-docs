@@ -1,6 +1,6 @@
 ---
 label: SUDO mode
-icon: key
+icon: lock
 order: 60
 ---
 

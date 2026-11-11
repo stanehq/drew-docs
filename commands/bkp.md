@@ -1,6 +1,6 @@
 ---
 label: Backups
-icon: database
+icon: archive
 order: 940
 ---
 

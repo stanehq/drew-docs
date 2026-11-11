@@ -1,6 +1,6 @@
 ---
 label: Configuration API
-icon: graph
+icon: code-square
 order: 100
 ---
 

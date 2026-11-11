@@ -1,4 +1,5 @@
 ---
+icon: package
 label: v.1.1.0
 order: 110
 authors:

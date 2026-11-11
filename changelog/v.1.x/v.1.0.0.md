@@ -1,4 +1,5 @@
 ---
+icon: tag
 label: v.1.0.0
 order: 100
 authors:
