@@ -1,5 +1,4 @@
 /* Drew brand overrides for Retype's generated UI. */
-:root,
 html:not(.dark) {
   --base-color: #1f9d64;
   --primary: #1f9d64;
@@ -8,6 +7,11 @@ html:not(.dark) {
   --nav-item-border-active: #1f9d64;
   --nav-item-text-active: #146c45;
   --nav-item-text-active-hover: #0f5c39;
+  --nav-item-bg-active: rgba(31,157,100,.10);
+  --nav-item-bg-active-hover: rgba(31,157,100,.14);
+  --nav-item-bg-hover: rgba(31,157,100,.06);
+  --nav-item-text-hover: #0f5c39;
+  --base-item-bg-hover: rgba(31,157,100,.06);
   --base-item-bg-active: rgba(31,157,100,.10);
   --base-item-text-active: #146c45;
   --toc-border-active: #1f9d64;
@@ -33,9 +37,29 @@ html.dark {
   --base-item-text-active: #7ee8b5;
   --base-item-bg-active: rgba(65,207,139,.10);
   --nav-bg: #050807;
+  --nav-item-text: #b9c6c0;
+  --nav-item-text-hover: #ecf3ef;
+  --nav-item-bg-hover: rgba(255,255,255,.04);
   --nav-item-text-active: #7ee8b5;
+  --nav-item-text-active-hover: #a6f0cb;
   --nav-item-bg-active: rgba(65,207,139,.10);
+  --nav-item-bg-active-hover: rgba(65,207,139,.16);
   --nav-item-border-active: #41cf8b;
+  --base-item-text: #b9c6c0;
+  --base-item-bg-hover: rgba(255,255,255,.04);
+  --header-bg: #050807;
+  --header-border: rgba(255,255,255,.08);
+  --header-text: #b9c6c0;
+  --header-text-hover: #ecf3ef;
+  --sidebar-left-bg: #050807;
+  --sidebar-left-border: rgba(255,255,255,.06);
+  --sidebar-right-bg: #050807;
+  --sidebar-right-border: rgba(255,255,255,.06);
+  --toc-text: #b9c6c0;
+  --toc-text-hover: #ecf3ef;
+  --search-modal-bg: #0a0f0d;
+  --search-results-bg: #0a0f0d;
+  --search-result-hover: rgba(65,207,139,.10);
   --toc-text-active: #7ee8b5;
   --toc-border-active: #41cf8b;
   --selection-bg: rgba(65,207,139,.28);
