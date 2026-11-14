@@ -6,7 +6,7 @@ order: 930
 
 # API tokens
 
-Create and manage tokens for the [Configuration API](../developers/api/intro.md).
+Create and manage tokens for the [Configuration API](../api.md).
 
 !!!info Who can use it
 By default, members with **Administrator**. Server admins can change this in Server Settings, Integrations.

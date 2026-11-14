@@ -14,7 +14,7 @@ authors:
 
 - Configure Drew from scripts or AI agents with per-server tokens: `/api token create`, `list` and `revoke`.
 - Self-describing settings schema, dry runs, atomic changes and a full audit trail.
-- See the [Configuration API](../../developers/api/intro.md).
+- See the [Configuration API](../../api.md).
 
 ## Website
 
