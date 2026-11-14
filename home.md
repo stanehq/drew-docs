@@ -25,7 +25,7 @@ order: 10000
 - **[Moderation](commands/mod.md)**: bans, kicks, timeouts, warnings, purges, locks and cases.
 - **Extras**: [giveaways](commands/giveaway.md), [music](commands/music.md), [VoiceMaster](commands/voicemaster.md), [Last.fm](commands/lastfm.md), [antivirus](commands/av.md) and [crypto](commands/crypto.md).
 
-Configure everything with slash commands, the [dashboard](https://drewbot.xyz/dashboard) or the [Configuration API](developers/api/intro.md). All three use the same rules and every change is logged.
+Configure everything with slash commands, the [dashboard](https://drewbot.xyz/dashboard) or the [Configuration API](api.md). All three use the same rules and every change is logged.
 
 Planned modules are listed on the [Roadmap](features/roadmap.md).
 

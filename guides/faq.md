@@ -13,7 +13,7 @@ order: 100
 - `/opsec` needs **Manage Server** and, for every change, an active **SUDO** session.
 - `/sudo setup` (the SUDO password) is **server owner** only.
 - On the [dashboard](https://drewbot.xyz/dashboard), only the server owner can save changes. Admins and managers can view.
-- With the [API](../developers/api/intro.md), a token can only change what its scope allows, and only in its own server.
+- With the [API](../api.md), a token can only change what its scope allows, and only in its own server.
 
 ### Can a rogue admin turn Drew off?
 

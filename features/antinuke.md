@@ -42,7 +42,7 @@ Keep the whitelist short. Every trusted account is an account that can nuke your
 4. Optional: change the limits with `/opsec limit`, for example `action:channel_delete threshold:3`.
 5. Trust your other bots: `/opsec whitelist`.
 
-You can also configure all of this from the [dashboard](https://drewbot.xyz/dashboard) or the [Configuration API](../developers/api/intro.md).
+You can also configure all of this from the [dashboard](https://drewbot.xyz/dashboard) or the [Configuration API](../api.md).
 
 ## Requirements
 
